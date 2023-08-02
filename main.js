@@ -136,7 +136,7 @@ function initVideoProfiles() {
   videoProfiles.forEach(profile => {
     $(".profile-list").append(`<a class="dropdown-item" label="${profile.label}" href="#">${profile.label}: ${profile.detail}</a>`);
   });
-  curVideoProfile = videoProfiles.find(item => item.label == '480p_1');
+  curVideoProfile = videoProfiles.find(item => item.label == '720p_2');
   $(".profile-input").val(`${curVideoProfile.detail}`);
 }
 async function changeVideoProfile(label) {
